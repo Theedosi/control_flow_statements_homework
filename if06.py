@@ -13,4 +13,23 @@ def main(a,b,c):
     Returns:
         string: string with the result
     """
-    return
+    sump = 0
+    sumn = 0
+    if a > 0 :
+        sump+=1
+    if b > 0 :
+        sump+=1
+    if c > 0 :
+        sump+=1
+    if a < 0 :
+        sumn+=1
+    if b < 0 :
+        sumn+=1
+    if c < 0 :
+        sumn+=1
+
+    if sump>sumn :
+        return "there are a lot of positive numbers"
+    if sumn > sump :
+        return "there are a lot of negative numbers"
+print(main(1,-2,-3))
