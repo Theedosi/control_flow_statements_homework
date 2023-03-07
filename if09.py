@@ -13,9 +13,9 @@ def main(a):
     x2 = a%10 # 7
     y = x2*10+x1 
     
-    if a < y :
-        return False
-    if a > y :
+    if y <= a :
         return True
-print(main(21))
+    if y > a :
+        return False
+print(main(57))
 
